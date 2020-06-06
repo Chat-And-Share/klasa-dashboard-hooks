@@ -23,7 +23,6 @@ class DashboardUser {
 	 * @param {Object} user The raw user data
 	 */
 	constructor(client, user) {
-		this.user = user;
 		/**
 		 * The DashboardClient
 		 * @since 0.0.1
