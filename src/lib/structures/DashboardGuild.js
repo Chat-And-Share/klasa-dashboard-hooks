@@ -99,7 +99,6 @@ class DashboardGuild {
    * @readonly
    */
   get guild() {
-    this.client.guilds.fetch(this.id);
     return this.client.guilds.cache.get(this.id) || null;
   }
 
