@@ -23,6 +23,7 @@ class DashboardUser {
 	 * @param {Object} user The raw user data
 	 */
 	constructor(client, user) {
+		this.user = user;
 		/**
 		 * The DashboardClient
 		 * @since 0.0.1
@@ -112,7 +113,6 @@ class DashboardUser {
 	 */
 	toJSON() {
 		return {
-			...this.user,
 			id: this.id,
 			username: this.username,
 			discriminator: this.discriminator,
