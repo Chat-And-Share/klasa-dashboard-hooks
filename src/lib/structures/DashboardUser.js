@@ -111,9 +111,8 @@ class DashboardUser {
 	 * @returns {DashboardUserJSON}
 	 */
 	toJSON() {
-		const user = (usr => usr ? usr.toJSON() : {})(this.user);
 		return {
-			...user,
+			...this.user,
 			id: this.id,
 			username: this.username,
 			discriminator: this.discriminator,
