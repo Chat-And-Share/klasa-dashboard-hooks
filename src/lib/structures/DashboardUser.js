@@ -105,7 +105,7 @@ class DashboardUser {
    */
   get user() {
     this.client.users.fetch(this.id);
-    return this.client.users.get(this.id) || null;
+    return this.client.users.cache.get(this.id) || null;
   }
 
   /**
